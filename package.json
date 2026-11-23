@@ -1,0 +1,18 @@
+{
+  "name": "catalogo-de-jogos",
+  "version": "1.0.0",
+  "description": "Aplicação web para cadastrar e consultar jogos, desenvolvida como **Atividade de Back-end** (ADS). O sistema é composto por uma **API REST** em Node.js/Express, um banco de dados **SQLite** e um **front-end** em HTML, CSS e JavaScript puro, que consome a API.",
+  "main": "back-end/app.js",
+  "scripts": {
+    "start": "node back-end/app.js",
+    "dev": "node --watch back-end/app.js"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "multer": "^2.5.0"
+  }
+}

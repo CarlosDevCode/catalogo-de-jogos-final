@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Jogo</title>
+  <link rel="icon" type="image/png" href="./assets/icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html"><img src="./assets/icone.png" alt=""><h1>Catálogo de Jogos</h1></a>
+  </header>
+
+  <main class="container">
+    <div id="conteudo"></div>
+  </main>
+
+  <dialog id="modalExcluir">
+    <h3>Excluir jogo?</h3>
+    <p>Essa ação não poderá ser desfeita.</p>
+    <div class="acoes">
+      <button class="btn btn-danger" id="confirmar">Excluir</button>
+      <button class="btn" id="cancelar">Cancelar</button>
+    </div>
+  </dialog>
+
+  <footer>Direitos reservados: Alison, Arthur, Eraldo, Samara, Thiago.</footer>
+  <script src="js/icons.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/jogo.js"></script>
+</body>
+</html>

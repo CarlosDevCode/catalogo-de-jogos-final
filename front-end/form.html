@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Jogo - Catálogo de Jogos</title>
+  <link rel="icon" type="image/png" href="./assets/icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html"><img src="./assets/icone.png" alt=""><h1>Catálogo de Jogos</h1></a>
+  </header>
+
+  <main class="container">
+    <div class="page-title"><h2 id="titulo">Novo Jogo</h2></div>
+
+    <form id="form" class="painel form-card">
+      <div class="preview" id="preview"></div>
+      <div>
+        <label for="id">ID</label>
+        <input type="text" id="id" value="Gerado automaticamente" disabled>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required maxlength="120">
+
+        <label for="genero">Gênero</label>
+        <input type="text" id="genero" name="genero" required maxlength="60" placeholder="Ex.: FPS, RPG, Corrida">
+
+        <label for="plataforma">Plataforma</label>
+        <input type="text" id="plataforma" name="plataforma" required maxlength="100" placeholder="Ex.: PC, PS5, Xbox">
+
+        <label for="ano">Ano de lançamento</label>
+        <input type="number" id="ano" name="ano" required min="1950" max="2100" step="1" placeholder="Ex.: 2012">
+
+        <label for="imagem">Imagem do jogo</label>
+        <input type="file" id="imagem" name="imagem" accept="image/png,image/jpeg,image/webp,image/gif">
+        <p class="dica">PNG, JPG, WEBP ou GIF até 5 MB. A imagem é salva no servidor.</p>
+
+        <div id="erro" class="erro" hidden></div>
+
+        <div class="acoes">
+          <button type="submit" class="btn btn-primary" id="salvar">Salvar</button>
+          <a class="btn" id="cancelar" href="index.html">Cancelar</a>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer>Direitos reservados: Alison, Arthur, Eraldo, Samara, Thiago.</footer>
+  <script src="js/icons.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
